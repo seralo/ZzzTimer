@@ -21,7 +21,7 @@ class ZzzTimer {
 
 	public:
 		/** Set the callback to call. */
-		void setCallback(ZzzInputCallback callback) {
+		void setCallback(ZzzTimerCallback callback) {
 			_callback=callback;
 		}
 	

@@ -13,6 +13,7 @@ void setup() {
 	Serial.begin(115200);
 	delay(250); //to ensure correctly initialized
 
+	Serial.println("Timer example");
 	timer.setCallback(ding);
 }
 
