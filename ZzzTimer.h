@@ -28,7 +28,7 @@ class ZzzTimer {
 		/** To call frequently (ie: in Arduino loop) */
 		void update() {
 			//check elapsed time (overflow proof)
-			if (millis() - _lastRequestMs > _intervalMs) {
+			if (millis() - _lastRequestMs >= _intervalMs) {
 				_lastRequestMs=millis();
 
 				if (_callback!=nullptr) {
